@@ -55,9 +55,26 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-left">
                     <li><a class=" active" href="index.html">Accueil</a></li>
-                    <li><a href="#info_compte" class="scroll">Info Compte</a></li>
+                    
+                    <li class="dropdown">
+                            <a href="" class="dropdown-toggle" type="button" data-toggle="dropdown">Synthèses<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+    
+                    
+                                <li><a href="#">Mes Comptes</a></li>
+                                <li><a href="#">Mes Crédits</a></li>
+                                <li><a href="#">Mon Épargne</a></li>
+                                <li><a href="#">Mes Assurances</a></li>
+                                <li><a href="#">Devises</a></li>
+    
+    
+                            </ul>
+    
+                        </li>
+    
                     <li><a href="#services" class="scroll">Services</a></li>
                     <li><a href="#e_services" class="scroll">E-Services</a></li>
+                    <li><a href="#e_documents" class="scroll">E-Documents</a></li>
 
                     <!-- <li class="dropdown">
                         <a href="" class="dropdown-toggle" type="button" data-toggle="dropdown">Services
@@ -89,46 +106,8 @@
                     </li> -->
 
 
-                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" type="button" data-toggle="dropdown">Les Comptes<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-
-                            <li class="divider mb-5 text-primary"></li>
-                            <li class="text-primary text-center">
-                                <p><strong>Différents types de comptes</strong> </p>
-
-                            </li>
-                            <li class="divider mb-5 text-primary"></li>
-                            <li><a href="#">CSL</a></li>
-                            <li><a href="#">CCHQ</a></li>
-                            <li><a href="#">TITRE</a></li>
-
-
-                            <li class="divider mb-5 text-primary"></li>
-                            <li class="text-primary text-center">
-                                <p><strong>Demander un Compte</strong> </p>
-
-                            </li>
-                            <li class="divider mb-5 text-primary"></li>
-
-                            <li><a href="#">Prendre un Rendez-Vous Avec Mon Conseiller</a></li>
-                            <li><a href="#">Joindre un Conseiller par telephone</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" type="button" data-toggle="dropdown">Emprunteur<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="fa fa-home"></i> Habitat</a></li>
-                            <li><a href="#"><i class="fa fa-car"></i> Véhicules</a></li>
-                            <li><a href="#"><i class="fa fa-graduation-cap"></i> Etudes</a></li>
-                            <li><a href="#"><i class="fa fa-wrench"></i> Travaux</a></li>
-
-                        </ul>
-
-                    </li>
-
+                    
+                   
                     <!-- <li><a href="#testimonials" class="scroll">Devis et simulation</a> -->
 
                     </li>
@@ -238,10 +217,7 @@
                 </div>
                 <div class="modal-body">
                     <img src="images/img4.jpg" alt=" " class="img-responsive" />
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-                        esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                        <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</i></p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -258,8 +234,7 @@
                 <div class="modal-body">
                     <img src="images/img4.jpg" alt=" " class="img-responsive" />
                     <p>
-                        esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                        <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</i></p>
+                        </p>
                 </div>
             </div>
         </div>
@@ -276,8 +251,7 @@
                 <div class="modal-body">
                     <img src="images/img4.jpg" alt=" " class="img-responsive" />
                     <p>
-                        esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-                        <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</i></p>
+                       </p>
                 </div>
             </div>
         </div>
@@ -285,7 +259,7 @@
     <!-- //bootstrap-modal-csl -->
     <!-- welcome -->
     <div class="services" id="info_compte">
-        <div class="container">
+        <div class="container table table-bordered">
             <div class="w3-heading-all">
                 <h3>Info Comptes Personnels</h3>
             </div>
@@ -354,43 +328,51 @@
 
     <!--/services-->
     <div class="services" id="services">
-        <div class="container">
+        <div class="container table table-bordered">
             <div class="w3-heading-all">
                 <h3>Services</h3>
             </div>
             <div class="w3-agile-services-grids1">
-                <div class="col-md-4 services-left-grid">
+                <div class="col-md-3 services-left-grid">
 
-                        <blockquote>
+                    <blockquote>
 
-                                <p><img src="images/services.png" class="img-responsive" alt="" /></p>
-                                <small><a href="#">Prendre rendez-vous</a></small>
-                        </blockquote>
-                        
-                        <!-- <h4><a href="#">Prendre rendez-vous</a></h4>
+                        <p><img src="images/services.png" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Prendre rendez-vous</a></small>
+                    </blockquote>
+
+                    <!-- <h4><a href="#">Prendre rendez-vous</a></h4>
                     <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
                 </div>
 
-                <div class="col-md-4 services-left-grid">
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
 
+                        <p><img src="images/services.png" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Virements</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Virements</a></h4>
+                    <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/services.png" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Chéquiers</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Chéquiers</a></h4>
+                    <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+                <div class="col-md-3 services-left-grid">
                         <blockquote>
-
-                                <p><img src="images/services.png" class="img-responsive" alt="" /></p>
-                                <small><a href="#">Virements</a></small>
+    
+                            <p><img src="images/services.png" class="img-responsive" alt="" /></p>
+                            <small><a href="#">Situation globale</a></small>
                         </blockquote>
                         <!-- <h4><a href="#">Virements</a></h4>
-                    <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
-                </div>
-                <div class="col-md-4 services-left-grid">
-                        <blockquote>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                    </div>
 
-                                <p><img src="images/services.png" class="img-responsive" alt="" /></p>
-                                <small><a href="#">Chéquiers</a></small>
-                        </blockquote>
-                        <!-- <h4><a href="#">Chéquiers</a></h4>
-                    <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
-                </div>
-                
 
             </div>
 
@@ -403,61 +385,105 @@
     <!--//services-->
     <!--/eservices-->
     <div class="services" id="e_services">
-            <div class="container">
-                <div class="w3-heading-all">
-                    <h3>E-Services</h3>
-                </div>
-                <div class="w3-agile-services-grids1">
-                    <div class="col-md-3 services-left-grid">
-                            <blockquote>
-
-                                    <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
-                                    <small><a href="#">Souscription 100% en Linge</a></small>
-                            </blockquote>
-                        <!-- <h4><a href="#">Souscription 100% en Linge</a></h4>
-                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
-                    </div>
-    
-                    <div class="col-md-3 services-left-grid">
-                            <blockquote>
-
-                                    <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
-                                    <small><a href="#">Mes contrats en attente</a></small>
-                            </blockquote>
-                        <!-- <h4><a href="#">Mes contrats en attente </a></h4>
-                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
-                    </div>
-                    <div class="col-md-3 services-left-grid">
-                            <blockquote>
-
-                                    <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
-                                    <small><a href="#">Mes factures par SEPAmail</a></small>
-                            </blockquote>
-                        <!-- <h4><a href="#">Mes factures par SEPAmail</a></h4>
-                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
-                    </div>
-                    <div class="col-md-3 services-left-grid">
-                            <blockquote>
-
-                                    <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
-                                    <small><a href="#">Mémo</a></small>
-                            </blockquote>
-                        <!-- <h4><a href="#">Mémo</a></h4>
-                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
-                    </div>
-    
-                </div>
-    
-                <div class="clearfix"></div>
+        <div class="container table table-bordered">
+            <div class="w3-heading-all">
+                <h3>E-Services</h3>
             </div>
-    
-    
+            <div class="w3-agile-services-grids1">
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Souscription 100% en Linge</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Souscription 100% en Linge</a></h4>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Mes contrats en attente</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Mes contrats en attente </a></h4>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Mes factures par SEPAmail</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Mes factures par SEPAmail</a></h4>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/eservice.jpg" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Mémo</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Mémo</a></h4>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
         </div>
-        <!-- </div> -->
-        <!--//services-->
+
+
+    </div>
+
+    <!--//services-->
+    <!--/eservices-->
+    <div class="services" id="e_documents">
+        <div class="container table table-bordered">
+            <div class="w3-heading-all">
+                <h3>E-Documents</h3>
+            </div>
+            <div class="w3-agile-services-grids1">
+
+                <div class="col-md-3 services-left-grid">
+
+                </div>
+
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/e_documents.png" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Gestion</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Mes contrats en attente </a></h4>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+                <div class="col-md-3 services-left-grid">
+                    <blockquote>
+
+                        <p><img src="images/e_documents.png" class="img-responsive" alt="" /></p>
+                        <small><a href="#">Consultation</a></small>
+                    </blockquote>
+                    <!-- <h4><a href="#">Mes factures par SEPAmail</a></h4>
+                        <img src="images/assurance_auto.jpg" class="img-responsive" alt="" /> -->
+                </div>
+                <div class="col-md-3 services-left-grid">
+
+                </div>
+
+
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+
+    </div>
+
+    <!--//services-->
     <!-- agents -->
     <div class="jarallax w3ls-section team1" id="agents">
-        <div class="container">
+        <div class="container table table-bordered">
             <div class="w3-heading-all">
                 <h3><span>A</span>gents</h3>
             </div>
