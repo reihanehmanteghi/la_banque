@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="../dist/css/style.css" type="text/css" media="all" />
     <!-- Style-CSS -->
     <link rel="stylesheet" href="../dist/css/font-awesome.css">
+    <link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.woff">
+    <link rel="stylesheet" href="../fonts/glyphicons-halflings-regular.woff2">
+
+
     <!-- Font-Awesome-Icons-CSS -->
     <!-- //css files -->
 
@@ -227,7 +231,55 @@
         </div>
     </div>
     <!-- //bootstrap-modal-csl -->
+ <!-- bootstrap-modal-messagerierecu -->
+ <div class="modal video-modal fade" id="myModal_messagerecu" tabindex="-1" role="dialog" aria-labelledby="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-success">
+                Detail de Message
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <!-- <img src="../images/img4.jpg" alt=" " class="img-responsive" /> -->
+                <p>
 
+                   {{Angularjs Detail ICI}} 
+                </p>
+                <div class="pull-right">
+                        <button type="button" class="btn btn-success ">Repondre
+                            </button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //bootstrap-modal-messagerie -->
+ <!-- bootstrap-modal-messagerierecu -->
+ <div class="modal video-modal fade" id="myModal_messageenvoyee" tabindex="-1" role="dialog" aria-labelledby="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    Detail de Message
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <img src="../images/img4.jpg" alt=" " class="img-responsive" /> -->
+                    <p>
+    
+                       {{Angularjs Detail de massage envoyee ICI}} 
+                    </p>
+                    <div class="pull-right">
+                            <button type="button" class="btn btn-warning ">Enregistrer
+                                </button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //bootstrap-modal-messagerie -->
+    
 
      <!-- welcome -->
      <div class="services" id="info_compte">
@@ -361,11 +413,43 @@
                                                                         reihannnn
                                                                         <span class="pull-right message_recu">(message_recu)</span>
                                                                     </h4>
-                                                                    <p class="summary">paggg paggg 111...</p>
+                                                                    <!-- <a >paggg paggg 111...</a> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messagerecu">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
                                                     </tr>
+                                                    <tr data-status="message_recu">
+                                                            <td>
+                                                                <div class="ckbox">
+                                                                    <input type="checkbox" id="checkbox1">
+                                                                    <label for="checkbox1"></label>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <a href="javascript:;" class="star">
+                                                                    <i class="glyphicon glyphicon-star"></i>
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="media">
+                                                                    <a href="#" class="pull-left">
+                                                                        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                                                    </a>
+                                                                    <div class="media-body">
+                                                                        <span class="media-meta pull-right">Febrero 13, 2016</span>
+                                                                        <h4 class="title">
+                                                                            message recu 2
+                                                                            <span class="pull-right message_recu">(message_recu)</span>
+                                                                        </h4>
+                                                                        <!-- <a >paggg paggg 111...</a> -->
+                                                                        <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messagerecu">Description de Message</a>
+    
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
                                                     <tr data-status="message_envoyee">
                                                         <td>
                                                             <div class="ckbox">
@@ -389,7 +473,9 @@
                                                                         Message envoyee 1
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">message envoyee 1 text...</p>
+                                                                    <!-- <p class="summary">message envoyee 1 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -446,7 +532,9 @@
                                                                         reihan
                                                                         <span class="pull-right message_recu">(message_recu)</span>
                                                                     </h4>
-                                                                    <p class="summary">pag paaaaag...</p>
+                                                                    <!-- <p class="summary">pag paaaaag...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messagerecu">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -474,7 +562,9 @@
                                                                         Message envoyee 2
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 2 text...</p>
+                                                                    <!-- <p class="summary">Message envoyee 2 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -502,7 +592,9 @@
                                                                         Message envoyee 2
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 2 text...</p>
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
+                                                                    <!-- <p class="summary">Message envoyee 2 text...</p> -->
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -530,7 +622,9 @@
                                                                         Message envoyee 3
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 3 text...</p>
+                                                                    <!-- <p class="summary">Message envoyee 3 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -558,7 +652,9 @@
                                                                         Message envoyee 4
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 4 text...</p>
+                                                                    <!-- <p class="summary">Message envoyee 4 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -586,7 +682,9 @@
                                                                         Message envoyee 5
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 5 text...</p>
+                                                                    <!-- <p class="summary">Message envoyee 5 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -614,7 +712,9 @@
                                                                         Message envoyee 6
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 6 text...</p>
+                                                                    <!-- <p class="summary">Message envoyee 6 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -642,7 +742,9 @@
                                                                         Message envoyee 7
                                                                         <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                                     </h4>
-                                                                    <p class="summary">Message envoyee 7 text...</p>
+                                                                    <!-- <p class="summary">Message envoyee 7 text...</p> -->
+                                                                    <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                                 </div>
                                                             </div>
                                                         </td>

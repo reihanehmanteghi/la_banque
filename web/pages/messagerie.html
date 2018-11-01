@@ -328,16 +328,20 @@
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <div >
+                            <div>
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-success btn-filter" data-target="message_recu">Message
-                                        Recu</button>
+                                        Recu
+                                    </button>
                                     <button type="button" class="btn btn-warning btn-filter" data-target="message_envoyee">Message
-                                        Envoyee</button>
+                                        Envoyee
+                                    </button>
                                     <button type="button" class="btn btn-danger btn-filter" data-target="message_nonlus">Non
-                                        Lus</button>
+                                        Lus
+                                    </button>
                                     <button type="button" class="btn btn-default btn-filter" data-target="all">Toutes Les
-                                        Messages</button>
+                                        Messages
+                                    </button>
                                 </div>
                             </div>
                             <div class="table-container">
@@ -366,7 +370,10 @@
                                                             reihannnn
                                                             <span class="pull-right message_recu">(message_recu)</span>
                                                         </h4>
-                                                        <p class="summary">paggg paggg 111...</p>
+                                                        <!-- <p class="summary">paggg paggg 111...</p> -->
+                                                        
+                                                        <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messagerecu">Description de Message</a>
+
                                                     </div>
                                                 </div>
                                             </td>
@@ -394,7 +401,9 @@
                                                             Message envoyee 1
                                                             <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                         </h4>
-                                                        <p class="summary">message envoyee 1 text...</p>
+                                                        <!-- <p class="summary">message envoyee 1 text...</p> -->
+                                                        <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                     </div>
                                                 </div>
                                             </td>
@@ -450,7 +459,9 @@
                                                             reihan
                                                             <span class="pull-right message_recu">(message_recu)</span>
                                                         </h4>
-                                                        <p class="summary">pag paaaaag...</p>
+                                                        <!-- <p class="summary">pag paaaaag...</p> -->
+                                                        <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messagerecu">Description de Message</a>
+
                                                     </div>
                                                 </div>
                                             </td>
@@ -478,7 +489,9 @@
                                                             Message envoyee 2
                                                             <span class="pull-right message_envoyee">(message_envoyee)</span>
                                                         </h4>
-                                                        <p class="summary">Message envoyee 2 text...</p>
+                                                        <!-- <p class="summary">Message envoyee 2 text...</p> -->
+                                                        <a class="summary" href="#" data-toggle="modal" data-target="#myModal_messageenvoyee">Description de Message</a>
+
                                                     </div>
                                                 </div>
                                             </td>
@@ -493,6 +506,48 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
+            <!-- Modal message recu -->
+            <div class="modal fade" id="myModal_messagerecu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-success">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            {{Angularjs Details ici}}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Repondre</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+            <!-- Modal message envoyee -->
+            <div class="modal fade" id="myModal_messageenvoyee" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-warning">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            {{Angularjs details ici}}
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
 
         </div>
         <!-- /#page-wrapper -->
